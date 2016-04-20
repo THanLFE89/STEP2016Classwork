@@ -12,5 +12,6 @@ def TempConvert(x):
         main()
     else:
         print("Thanks for using my program!")
+        exit()
 
 main()
