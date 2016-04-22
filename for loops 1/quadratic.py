@@ -9,7 +9,7 @@ def Variables():
             b=float(input("What is the value of B?"))
             c=float(input("What is the value of C?"))
             x=float(input("What is the value of X?"))
-            print("The proper quadratic equation is:","(",a,"x^2)+","(",b,"x)+","(",c,")","!")
+            print("The proper quadratic equation is:","y = (",a,"x^2 )+","(",b,"x )+","(",c,")","!")
             print("The value of your quadratic is",(a*(x*x))+(b*x)+(c),"!")
             decision=input("Had enough? Then just enter Y. Otherwise..Get off my lawn!")
             if decision=="y" or decision=="Y":
