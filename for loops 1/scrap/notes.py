@@ -43,6 +43,7 @@ def FahrTable(x):
 
 main()
 '''
+'''
 def main():
     iterations=getiterations()
     getaverage(iterations)
@@ -65,8 +66,36 @@ def getaverage(y):
     sum=sum+firstlist[lengthofList]
     print("")
     print("The average of your numbers is",sum/(lengthofList+1))
-'''
+
     for b in firstlist:
         print(b)
+
+main()
+
 '''
+def main():
+    NamesColors()
+'''
+def NamesColors():
+    namelist=[]
+    colorlist=[]
+    exit=False
+    while exit==False:
+        namelist.append(input("Enter Your Name"))
+        colorlist.append(input("Enter Your Favorite Color"))
+        decision=input("Press Q to Quit or any other key to Continue")
+        if decision=="q" or decision=="Q":
+            exit=True
+    length=len(namelist)
+    for a in range(0,length):
+        print(namelist[a],"'s Favorite Color is",colorlist[a],"!")
+
+main()
+'''
+def main():
+    try:
+        x=input("Give me your age")
+        print(x)
+    except:
+        print("Why you no give me a digit?")
 main()
