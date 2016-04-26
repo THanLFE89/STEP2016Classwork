@@ -10,11 +10,13 @@ def Compare():
     ValidGuess=False
     while ValidGuess==False:
         Guess = int(input("Feelin' Lucky, Punk??"))
-        if Answer==Guess:
-            print("Lucky Guess! Now Scram!")
-            ValidGuess=True
-        elif b<=0:
+        if b<=0:
             print("There's only room for 1 coder in this integrated development environment")
+            print("BANG")
+            print("GAME OVER")
+            ValidGuess = True
+        elif Answer==Guess:
+            print("Lucky Guess! Now Scram!")
             ValidGuess=True
         elif Guess==Answer+1 or Guess==Answer-1:
             print("You're steaming hot!")
