@@ -3,7 +3,7 @@ def main():
 
 def GrabNumbers():
     NumList=[]
-    SetNumber = input("How Many Numbers Will You Add?")
+    SetNumber = int(input("How Many Numbers Will You Add?"))
     ValidNum=False
     while ValidNum==False:
         try:
@@ -15,20 +15,21 @@ def GrabNumbers():
             print("Invalid Input. Please Try Again")
     b=0
     ValidMax=False
-    Max=SetNumber[0]
-    while b<len(SetNumber)-1 and ValidMax==False:
+    NumMax=NumList[0]
+    while b<len(NumList)-1 and ValidMax==False:
         b+=1
-        if SetNumber[b]>Max:
-            Max=SetNumber[b]
-        if SetNumber>=1:
+        if NumList[b]>NumMax:
+            NumMax=NumList[b]
+        if b>=SetNumber:
             ValidMax=True
     c=0
     ValidMin=False
-    Min=SetNumber[0]
-    while c<len(SetNumber) and ValidMin==False:
+    NumMin=NumList[0]
+    while c<len(NumList)-1 and ValidMin==False:
         c+=1
-        if SetNumber[c]<Min:
-            Min=SetNumber[c]
-        if SetNumber>=1:
+        if NumList[c]<NumMin:
+            NumMin=NumList[c]
+        if c>=SetNumber:
             ValidMin=True
+    print("The Biggest Number You Entered Was",NumMax,"The Smallest Number You Entered Was",NumMin)
 main()
