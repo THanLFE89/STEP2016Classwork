@@ -7,7 +7,6 @@ def Compare():
     try:
         b=2
         Answer = random.randint(1,10)
-        print(Answer)
         ValidGuess=False
         while ValidGuess==False:
             Guess = int(input("Feelin' Lucky, Punk??"))
