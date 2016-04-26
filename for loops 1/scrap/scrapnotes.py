@@ -5,3 +5,5 @@ for line in f:
 b=len(myList)
 for a in range(0,b):
     print(myList[a])
+
+#reads should always be under a try/except function
