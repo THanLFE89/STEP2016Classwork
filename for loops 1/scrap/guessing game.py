@@ -6,7 +6,7 @@ def main():
 def Compare():
     try:
         b=2
-        Answer = random.randint(x,y)
+        Answer = random.randint(1,10)
         print(Answer)
         ValidGuess=False
         while ValidGuess==False:
